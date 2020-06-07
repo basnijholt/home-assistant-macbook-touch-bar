@@ -1,10 +1,10 @@
 import json
 
-from utils import entity, this_folder
+from utils import entity, icon_folder
 
 state = entity("input_boolean.sleep_mode")["state"]
 icon = str(
-    this_folder / "fa-bed.png"
+    icon_folder / "fa-bed.png"
 )  # from https://github.com/encharm/Font-Awesome-SVG-PNG
 
 info = dict(

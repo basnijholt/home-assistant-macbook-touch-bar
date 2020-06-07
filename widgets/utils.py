@@ -11,6 +11,7 @@ headers = {
 }
 
 this_folder = Path(__file__).resolve().parent
+icon_folder = this_folder.parent / "icons"
 
 
 def entity(entity_id):
