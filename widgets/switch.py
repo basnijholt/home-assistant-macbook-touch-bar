@@ -1,3 +1,7 @@
+# Switch button widget
+# 
+# Tested with an `input_boolean` and `light`.
+
 import argparse
 import json
 
