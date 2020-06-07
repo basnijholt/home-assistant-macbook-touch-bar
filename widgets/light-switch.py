@@ -4,16 +4,14 @@ import json
 from utils import entity, icon_folder, service
 
 parser = argparse.ArgumentParser()
+parser.add_argument("--entity_id", action="store", required=True)
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument("--state", action="store_true")
 group.add_argument("--toggle", action="store_true")
 args = parser.parse_args()
 
-domain = "light"
-entity_id = "light.living_room_lights"
-
 if args.state:
-    state = entity(entity_id)["state"]
+    state = entity(args.entity_id)["state"]
     icon = str(
         icon_folder / "fa-lightbulb-o.png"
     )  # from https://github.com/encharm/Font-Awesome-SVG-PNG
@@ -25,5 +23,5 @@ if args.state:
     )
     print(json.dumps(info))
 elif args.toggle:
-    response = service(domain, "toggle", entity_id)
+    response = service("light", "toggle", args.entity_id)
     print("Toggling")
