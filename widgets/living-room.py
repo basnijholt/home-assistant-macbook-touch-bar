@@ -4,7 +4,7 @@ from utils import entity, this_folder
 
 state = entity("light.living_room_lights")["state"]
 icon = str(
-    this_folder / "fa-lightbulb-o.png"
+    this_folder / ".." / "fa-lightbulb-o.png"
 )  # from https://github.com/encharm/Font-Awesome-SVG-PNG
 
 info = dict(
