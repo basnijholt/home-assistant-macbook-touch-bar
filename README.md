@@ -4,7 +4,13 @@
 
 Displaying Home Assistant sensors in the Macbook Pro's touch bar using BTT
 
-To install a widget on your touch bar
+## Requirements
+
+* install [BetterTouchTool](https://folivora.ai/downloads)
+* clone/[download](https://github.com/basnijholt/home-assistant-macbook-touch-bar/archive/master.zip) this repository
+* rename [widgets/secret-example.py](widgets/secret-example.py) to `widgets/secret.py` and fill in a token and URL
+
+## Install a widget
 
 1. open BetterTouchTool
 2. select Touch Bar (⌘1)
