@@ -1,4 +1,7 @@
 # home-assistant-macbook-touch-bar
+
+![](example.png)
+
 Displaying Home Assistant sensors in the Macbook Pro's touch bar using BTT
 
 To install a widget on your touch bar
