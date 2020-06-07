@@ -21,6 +21,6 @@ info = dict(
 if args.icon:
     # download icons from https://github.com/encharm/Font-Awesome-SVG-PNG
     # and place them in `../icons/`
-    info["icon"] = str(icon_folder / args.icon)
+    info["icon_path"] = str(icon_folder / args.icon)
 
 print(json.dumps(info))
