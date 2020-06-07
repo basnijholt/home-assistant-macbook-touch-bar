@@ -26,3 +26,9 @@ If the widget has an action associated with it, continue
 7. at "Assigned Action(s)" click on "Click here & select action ►" → "Controlling Other Applications" → "Execute Shell Script / Task"
 8. repeat step 5. and 6.
 6. pass the right argument (e.g., add `--toggle`) to the script
+
+## Examples
+
+![](example-real-life.jpg)
+
+![](BetterTouchTool.jpg)
