@@ -16,7 +16,7 @@ import argparse
 from utils import entity, service
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--entity_id", action="store")
+parser.add_argument("--entity_id", action="store", required=True)
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument("--state", action="store_true")
 group.add_argument("--set", action="store")
