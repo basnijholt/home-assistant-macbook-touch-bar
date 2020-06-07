@@ -1,14 +1,18 @@
+import argparse
 import json
-import sys
 
 from utils import entity, icon_folder, service
 
-which = sys.argv[1]
+parser = argparse.ArgumentParser()
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument("--state", action="store_true")
+group.add_argument("--toggle", action="store_true")
+args = parser.parse_args()
 
 domain = "light"
 entity_id = "light.living_room_lights"
 
-if which == "state":
+if args.state:
     state = entity(entity_id)["state"]
     icon = str(
         icon_folder / "fa-lightbulb-o.png"
@@ -20,8 +24,6 @@ if which == "state":
         background_color="255,255,0,255" if state == "on" else "75,75,75,255",
     )
     print(json.dumps(info))
-elif which == "toggle":
+elif args.toggle:
     response = service(domain, "toggle", entity_id)
     print("Toggling")
-else:
-    raise ValueError("Incorrect option")
