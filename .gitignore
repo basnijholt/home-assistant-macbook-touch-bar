@@ -130,3 +130,4 @@ dmypy.json
 
 # Added by @basnijholt
 secret.py
+.DS_Store
