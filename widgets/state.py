@@ -10,7 +10,7 @@ args = parser.parse_args()
 
 info = entity(args.entity_id)
 state = info["state"].replace("_", " ")
-unit = info["attributes"].get("unit_of_measurement", "")
+unit = info.get("attributes", {}).get("unit_of_measurement", "")
 info = dict(text=f"{state} {unit}")
 if args.icon:
     # download icons from https://github.com/encharm/Font-Awesome-SVG-PNG
