@@ -20,7 +20,7 @@ Displaying Home Assistant sensors in the Macbook Pro's touch bar using BTT.
 3. click on (+) sign
 4. at "Select Trigger" → "Touch Bar Widgets" → "Shell Script / Task Widget"
 5. at "Launch Path" leave `/bin/bash` and at "Parameters" leave `-c`
-6. at "Script" add `FULL_PYTHON_PATH PATH_TO_WIDGET OPTIONAL_ARGUMENTS`, for the full Python path, use `which python`, e.g., `/Users/basnijholt/miniconda3/bin/python /Users/basnijholt/Downloads/home-assistant-macbook-touch-bar/switch.py --entity_id light.living_room_lights --icon fa-lightbulb-o.png`
+6. at "Script" add `FULL_PYTHON_PATH PATH_TO_WIDGET OPTIONAL_ARGUMENTS`, for the full Python path, use `which python`, e.g., `/usr/local/bin/python3 ~/Downloads/home-assistant-macbook-touch-bar/widgets/switch.py --entity_id light.living_room_lights --icon fa-lightbulb-o.png`
 
 If the widget has an action associated with it, continue
 
