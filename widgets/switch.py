@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Switch button widget
 #
 # Tested with an `input_boolean` and `light`.

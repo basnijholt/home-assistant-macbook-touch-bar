@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Change the variables and rename this file to secret.py
 
 # add your url here (without trailing / at the end!)

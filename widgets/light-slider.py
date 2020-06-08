@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Light slider widget
 
 This is a "Custom Apple Script Slider Widget" type.

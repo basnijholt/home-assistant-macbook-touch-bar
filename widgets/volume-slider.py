@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Volume slider widget
 
 This is a "Custom Apple Script Slider Widget" type.
