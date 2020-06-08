@@ -30,6 +30,8 @@ If the widget has an action associated with it, continue
 
 ## Install a slider widget
 
+![](example-sliders.png)
+
 See the instructions in
 - [`widgets/light-slider.py`](widgets/light-slider.py)
 - [`widgets/volume-slider.py`](widgets/volume-slider.py)
