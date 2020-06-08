@@ -28,7 +28,7 @@ domain = args.entity_id.split(".")[0]
 
 if args.state:
     state = entity(args.entity_id)
-    brightness = 0 if state["state"] == "off" else state["attributes"]["brightness"]
+    brightness = state["attributes"]["brightness"] if state["state"] == "on" else 0
     print(brightness / 255)
 else:  # setting the state
     brightness = round(255 * float(args.set.replace(",", ".")))

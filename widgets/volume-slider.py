@@ -28,7 +28,7 @@ domain = args.entity_id.split(".")[0]
 
 if args.state:
     state = entity(args.entity_id)
-    volume_level = 0 if state["state"] == "off" else state["attributes"]["volume_level"]
+    volume_level = state["attributes"]["volume_level"] if state["state"] == "on" else 0
     print(volume_level)
 else:  # setting the state
     volume_level = round(float(args.set.replace(",", ".")), 2)
