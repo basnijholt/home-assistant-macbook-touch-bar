@@ -28,6 +28,10 @@ If the widget has an action associated with it, continue
 8. repeat step 5. and 6.
 6. pass the right argument (e.g., add `--toggle`) to the script
 
+## Install a slider widget
+
+See the instructions in [`widgets/light-slider.py`](widgets/light-slider.py) and use the BTT interface to choose an icon.
+
 ## Examples
 
 ![](example-real-life.jpg)
