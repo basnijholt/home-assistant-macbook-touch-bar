@@ -33,6 +33,7 @@ If the widget has an action associated with it, continue
 See the instructions in
 - [`widgets/light-slider.py`](widgets/light-slider.py)
 - [`widgets/volume-slider.py`](widgets/volume-slider.py)
+
 and use the BTT interface to choose an icon.
 
 ## Examples
