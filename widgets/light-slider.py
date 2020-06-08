@@ -1,4 +1,4 @@
-"""Slider widget
+"""Light slider widget
 
 This is a "Custom Apple Script Slider Widget" type.
 In the widget config add (*fix paths yourself*)

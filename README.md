@@ -30,9 +30,21 @@ If the widget has an action associated with it, continue
 
 ## Install a slider widget
 
-See the instructions in [`widgets/light-slider.py`](widgets/light-slider.py) and use the BTT interface to choose an icon.
+See the instructions in
+- [`widgets/light-slider.py`](widgets/light-slider.py)
+- [`widgets/volume-slider.py`](widgets/volume-slider.py)
+and use the BTT interface to choose an icon.
 
 ## Examples
+
+To add a light button like ![](example-light-toggle.png) use the [`widgets/switch.py`](widgets/switch.py) script like
+```bash
+~/miniconda3/bin/python ~/Downloads/home-assistant-macbook-touch-bar/widgets/switch.py --entity_id light.living_room_lights --text "🛋️💡"
+```
+and
+```bash
+~/miniconda3/bin/python ~/Downloads/home-assistant-macbook-touch-bar/widgets/switch.py --entity_id light.bedroom_lights --text "🛌💡" --toggle
+```
 
 ![](example-real-life.jpg)
 
