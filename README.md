@@ -37,11 +37,11 @@ and use the BTT interface to choose an icon.
 
 ## Examples
 
-To add a light button like ![](example-light-toggle.png) use the [`widgets/switch.py`](widgets/switch.py) script like
+To add a light buttons like ![](example-light-toggle.png) use the [`widgets/switch.py`](widgets/switch.py) script like (trigger script)
 ```bash
 ~/miniconda3/bin/python ~/Downloads/home-assistant-macbook-touch-bar/widgets/switch.py --entity_id light.living_room_lights --text "🛋️💡"
 ```
-and
+and (action script)
 ```bash
 ~/miniconda3/bin/python ~/Downloads/home-assistant-macbook-touch-bar/widgets/switch.py --entity_id light.bedroom_lights --text "🛌💡" --toggle
 ```
