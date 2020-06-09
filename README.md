@@ -4,7 +4,7 @@
 
 Displaying Home Assistant sensors in the Macbook Pro's touch bar using BTT.
 
-*See this [Reddit](https://www.reddit.com/r/homeassistant/comments/gyd5wd/finally_a_good_use_for_the_touch_bar_on_my/) thread.*
+*See [this Reddit](https://www.reddit.com/r/homeassistant/comments/gyd5wd/finally_a_good_use_for_the_touch_bar_on_my/) thread and [this topic on the Home-Assistant forum](https://community.home-assistant.io/t/macbook-pros-touch-bar-is-finally-useful-displaying-sensors-and-controlling-devices/202820?u=basnijholt).*
 
 ## Requirements
 
