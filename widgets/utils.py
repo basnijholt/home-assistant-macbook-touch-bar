@@ -3,7 +3,7 @@ from pathlib import Path
 
 import requests
 
-from secret import url, token
+from secret import token, url
 
 headers = {
     "Authorization": f"Bearer {token}",
