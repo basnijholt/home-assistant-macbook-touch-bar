@@ -8,6 +8,8 @@
 # https://www.home-assistant.io/integrations/airvisual/
 # Example entity used:
 # sensor.u_s_air_quality_index
+#
+# See https://github.com/basnijholt/home-assistant-macbook-touch-bar/pull/4
 
 import argparse
 import json
