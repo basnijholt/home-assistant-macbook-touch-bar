@@ -14,7 +14,7 @@
 import argparse
 import json
 
-from utils import entity, icon_folder, service
+from utils import entity, icon_folder
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--entity_id", action="store", required=True)
