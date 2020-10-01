@@ -29,18 +29,16 @@ args = parser.parse_args()
 state = entity(args.entity_id)["state"]
 
 aqi = int(state)
-if aqi <= 50:
-    background_color = "0,228,0,255"
-elif aqi <= 100:
-    background_color = "255,255,0,255"
-elif aqi <= 150:
-    background_color = "255,126,0,255"
-elif aqi <= 200:
-    background_color = "255,0,0,255"
-elif aqi <= 300:
-    background_color = "153,0,76,255"
-else:
-    background_color = "76,0,38,255"
+for aqi_max, background_color in [
+    (50, "0,228,0,255"),
+    (100, "255,255,0,255"),
+    (150, "255,126,0,255"),
+    (200, "255,0,0,255"),
+    (300, "153,0,76,255"),
+    (float("inf"), "76,0,38,255"),
+]:
+    if aqi < aqi_max:
+        break
 
 info = dict(
     text=state if args.text is None else args.text,
