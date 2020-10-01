@@ -29,20 +29,18 @@ args = parser.parse_args()
 state = entity(args.entity_id)["state"]
 
 aqi = int(state)
-for aqi_max, background_color in [
+aqi_col_tups = [
     (50, "0,228,0,255"),
     (100, "255,255,0,255"),
     (150, "255,126,0,255"),
     (200, "255,0,0,255"),
     (300, "153,0,76,255"),
     (float("inf"), "76,0,38,255"),
-]:
-    if aqi < aqi_max:
-        break
+]
 
 info = dict(
     text=state if args.text is None else args.text,
-    background_color=background_color,
+    background_color=next(col for aqi_max, col in aqi_col_tups if aqi < aqi_max),
 )
 if args.icon:
     # download icons from https://github.com/encharm/Font-Awesome-SVG-PNG
